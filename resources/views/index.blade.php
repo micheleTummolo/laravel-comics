@@ -16,6 +16,9 @@
     @include('partials.header')
 </header>
 <body>
+    <div class="jumbotron">
+        <img src="{{ Vite::asset('resources/img/jumbotron.jpg')}}" alt="">
+    </div>
     <div class="container">
         <h1>Comics</h1>
     </div>
