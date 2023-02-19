@@ -15,9 +15,7 @@
 </head>
 <body>
     @include('partials.header')
-    <main>
-        @yield('content')
-    </main>
+    @yield('content')
     <footer>
         @include('partials.footer')
     </footer>
