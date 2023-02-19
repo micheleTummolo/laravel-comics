@@ -17,4 +17,15 @@ Route::get('/', function () {
     $comics = config('db');
 
     return view('index', compact('comics'));
-});
+})->name('comics');
+
+Route::get('/comics/{param}', function ($param) {
+    $comics = config('db');
+
+    foreach($comics as $key => $value){
+        if($key == $param)
+            $single = $value;
+    }
+
+    return view('detail_comics', compact('single'));
+})->name('detail-comics');
