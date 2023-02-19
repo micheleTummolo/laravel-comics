@@ -229,33 +229,36 @@ main {
             justify-content: space-between;
             flex-wrap: wrap;
 
-            .my_card {
-
-                width: calc((80vw / 6) - 1rem);
+            a {
                 margin: 0 .5rem 2rem .5rem;
 
-                .thumb {
+                .my_card {
+                    width: calc((80vw / 6) - 1rem);
 
-                    img {
-                        object-fit: cover;
-                        width: 100%;
-                        height: calc((80vw / 6) - 1rem);
-                        object-position: top;
-                        display: block;
+                    .thumb {
 
-                        &:hover {
-                            filter: brightness(50%);
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: calc((80vw / 6) - 1rem);
+                            object-position: top;
+                            display: block;
+
+                            &:hover {
+                                filter: brightness(50%);
+                            }
                         }
                     }
-                }
 
-                h4 {
-                    margin-top: 1rem;
-                    text-transform: uppercase;
-                    color: white;
-                    font-size: .8rem;
+                    h4 {
+                        margin-top: 1rem;
+                        text-transform: uppercase;
+                        color: white;
+                        font-size: .8rem;
+                    }
                 }
             }
+
         }
 
         .button_container {
